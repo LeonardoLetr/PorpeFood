@@ -2,11 +2,12 @@ package com.uniso.lpdm.porpefood;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends Activity {
 
     /* Leonardo Rodrigues RA:00101457 Ciências da Computação*/
     @Override
