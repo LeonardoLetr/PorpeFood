@@ -9,6 +9,7 @@ import android.widget.TextView;
 public class HomeActivity extends Activity {
 
     /* Leonardo Rodrigues RA:00101457 Ciências da Computação*/
+    /*COMMIT*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
