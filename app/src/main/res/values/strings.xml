@@ -2,4 +2,9 @@
     <string name="app_name">PorpeFood</string>
     <string name="btn_Register">Registrar novo pedido</string>
     <string name="btn_TotalHours">Total de horas trabalhadas</string>
+
+    <string name="registerOrder_screen_name">NOVO PEDIDO</string>
+    <string name="registerOrder_hint">Descreva o pedido</string>
+
+    <string name="btn_submit">Enviar</string>
 </resources>

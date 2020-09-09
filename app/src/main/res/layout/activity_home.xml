@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="vertical"
-    tools:context=".RegisterActivity">
+    tools:context=".HomeActivity">
 
     <TextView
         android:id="@+id/title"
@@ -47,7 +47,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="24dp"
 
-        android:onClick="onClickRegisterOrder"/>
+        android:onClick="onClickGoRegisterOrderActivity"/>
 
     <Button
         android:id="@+id/btnTotalHours"
