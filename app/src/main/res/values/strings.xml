@@ -6,5 +6,12 @@
     <string name="registerOrder_screen_name">NOVO PEDIDO</string>
     <string name="registerOrder_hint">Descreva o pedido</string>
 
+    <string name="timeManager_screen_name">BATIDA DE PONTO</string>
+
     <string name="btn_submit">Enviar</string>
+    <string name="btn_start">Iniciar Expediente</string>
+    <string name="btn_stop">Pausar</string>
+    <string name="btn_resume">Retomar</string>
+    <string name="btn_reset">Encerrar Expediente</string>
+
 </resources>
