@@ -1,6 +1,7 @@
 package com.uniso.lpdm.porpefood;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -20,6 +21,12 @@ public class TimeManagerActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_manager);
+
+        ConstraintLayout constraintLayout = findViewById(R.id.include);
+
+        TextView textView = constraintLayout.findViewById(R.id.txtTitle);
+
+        textView.setText("BATIDA DE PONTO");
 
         if (savedInstanceState != null) {
             seconds = savedInstanceState.getInt("seconds");

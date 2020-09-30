@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class RegisterOrderActivity extends Activity {
 
@@ -12,6 +15,12 @@ public class RegisterOrderActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_order);
+
+        ConstraintLayout constraintLayout = findViewById(R.id.include);
+
+        TextView textView = constraintLayout.findViewById(R.id.txtTitle);
+
+        textView.setText("NOVO PEDIDO");
     }
 
     /*Exercicio 4: Função ira enviar uma mensagem pelo Intent para qualquer aplicativo no

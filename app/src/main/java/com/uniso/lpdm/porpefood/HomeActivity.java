@@ -3,8 +3,11 @@ package com.uniso.lpdm.porpefood;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class HomeActivity extends Activity {
 
@@ -13,6 +16,12 @@ public class HomeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        ConstraintLayout constraintLayout = findViewById(R.id.include);
+
+        TextView textView = constraintLayout.findViewById(R.id.txtTitle);
+
+        textView.setText("HOME");
     }
 
     /*Exercicio 3: Função ira atualizar o TextView com um texto
@@ -26,7 +35,7 @@ public class HomeActivity extends Activity {
 
     /*Exercicio 3: Função ira atualizar o TextView com um texto
      *Exercicio 4: Função ira enviar o usuario para a tela que gerencia os pontos*/
-    public void onClickReturnHours(View view) {
+    public void onClickTimeManager(View view) {
         Intent intent = new Intent(this, TimeManagerActivity.class);
 
         startActivity(intent);
