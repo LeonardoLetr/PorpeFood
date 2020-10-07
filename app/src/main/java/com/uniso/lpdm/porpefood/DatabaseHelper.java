@@ -25,13 +25,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public static void insertOrder(SQLiteDatabase db, String name, String description, double unit_price, int image_resource_id) {
-        ContentValues newOrder = new ContentValues();
-        newOrder.put("name", name);
-        newOrder.put("description", description);
-        newOrder.put("unit_price", unit_price);
-        newOrder.put("image_resource_id", image_resource_id);
+        ContentValues newRequest = new ContentValues();
+        newRequest.put("name", name);
+        newRequest.put("description", description);
+        newRequest.put("unit_price", unit_price);
+        newRequest.put("image_resource_id", image_resource_id);
 
-        db.insert("Order", null, newOrder);
+        db.insert("Request", null, newRequest);
     }
 
     private void updateDB(SQLiteDatabase db,  int oldVersion, int newVersion) {
